@@ -1,4 +1,2 @@
 #!/bin/bash
-dotnet publish -c Release -o out
-cd out
-./Contract.Api
+dotnet publish Contract.Api/Contract.Api.csproj -c Release -o ./publish

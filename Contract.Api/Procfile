@@ -1,1 +1,1 @@
-web: dotnet Contract.Api.dll
+web: dotnet ./Contract.Api/bin/Release/net8.0/Contract.Api.dll
