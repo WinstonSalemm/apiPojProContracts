@@ -17,6 +17,8 @@ builder.Services.AddSingleton(new AgreementDocumentService(templatePath));
 
 var sofficePath = @"C:\Program Files\LibreOffice\program\soffice.exe";
 builder.Services.AddSingleton(new LibreOfficeConverter(sofficePath));
+builder.Services.AddSingleton<AgreementDocumentService>(sp =>
+    new AgreementDocumentService("templates/agreement_template.docx"));
 
 var app = builder.Build();
 
@@ -26,8 +28,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-builder.Services.AddSingleton<AgreementDocumentService>(sp =>
-    new AgreementDocumentService("templates/agreement_template.docx"));
 // === ИМЕННО ВОТ ЭТО — наш главный endpoint ===
 app.MapPost("/agreements/generate", async (
     AgreementRequest request,
