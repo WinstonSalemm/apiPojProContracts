@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Contract.Api.Models;
-using Contract.Api.Services;   // ⬅ вот это важно
+using Contract.Api.Services;
 
 namespace Contract.Api.Controllers;
 
@@ -9,10 +9,12 @@ namespace Contract.Api.Controllers;
 public class ContractController : ControllerBase
 {
     private readonly AgreementDocumentService _service;
+    private readonly IWebHostEnvironment _env;
 
-    public ContractController(AgreementDocumentService service)
+    public ContractController(AgreementDocumentService service, IWebHostEnvironment env)
     {
         _service = service;
+        _env = env;
     }
 
     [HttpPost("create")]
@@ -21,7 +23,9 @@ public class ContractController : ControllerBase
         if (model?.Items == null || !model.Items.Any())
             return BadRequest("Items list is empty");
 
-        var path = _service.Generate(model);
+        string outputDir = Path.Combine(_env.ContentRootPath, "generated");
+
+        var path = _service.GenerateDocx(model, outputDir);
 
         var bytes = System.IO.File.ReadAllBytes(path);
         return File(bytes, "application/pdf", Path.GetFileName(path));
