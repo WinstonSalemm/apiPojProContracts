@@ -14,7 +14,11 @@ public class AgreementDocumentService
     {
         _templatePath = templatePath;
     }
-
+    public string Generate(AgreementRequest request)
+    {
+        string outputDir = Path.Combine(Directory.GetCurrentDirectory(), "generated");
+        return GenerateDocx(request, outputDir);
+    }
     public string GenerateDocx(AgreementRequest request, string outputDir)
     {
         var ru = new CultureInfo("ru-RU");

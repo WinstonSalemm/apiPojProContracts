@@ -1,6 +1,7 @@
 using Contract.Api.Models;
 using Contract.Api.Services;
 
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddEndpointsApiExplorer();
@@ -25,6 +26,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+builder.Services.AddSingleton<AgreementDocumentService>(sp =>
+    new AgreementDocumentService("templates/agreement_template.docx"));
 // === ИМЕННО ВОТ ЭТО — наш главный endpoint ===
 app.MapPost("/agreements/generate", async (
     AgreementRequest request,
