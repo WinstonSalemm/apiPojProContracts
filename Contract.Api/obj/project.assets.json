@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net9.0": {
+    "net8.0": {
       "DocX/1.7.0": {
         "type": "package",
         "compile": {
@@ -514,7 +514,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net9.0": [
+    "net8.0": [
       "DocX >= 1.7.0",
       "Swashbuckle.AspNetCore >= 6.6.2",
       "System.IO.Packaging >= 8.0.0"
@@ -542,7 +542,7 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net9.0"
+        "net8.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -550,8 +550,8 @@
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net9.0": {
-          "targetAlias": "net9.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "projectReferences": {}
         }
       },
@@ -568,8 +568,8 @@
       "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
-      "net9.0": {
-        "targetAlias": "net9.0",
+      "net8.0": {
+        "targetAlias": "net8.0",
         "dependencies": {
           "DocX": {
             "target": "Package",
@@ -615,7 +615,7 @@
       "message": "У пакета \"System.IO.Packaging\" 8.0.0 есть известная уязвимость https://github.com/advisories/GHSA-f32c-w444-8ppv (уровень серьезности: высокий)",
       "libraryId": "System.IO.Packaging",
       "targetGraphs": [
-        "net9.0"
+        "net8.0"
       ]
     },
     {
@@ -625,17 +625,17 @@
       "message": "У пакета \"System.IO.Packaging\" 8.0.0 есть известная уязвимость https://github.com/advisories/GHSA-qj66-m88j-hmgj (уровень серьезности: высокий)",
       "libraryId": "System.IO.Packaging",
       "targetGraphs": [
-        "net9.0"
+        "net8.0"
       ]
     },
     {
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Пакет \"DocX 1.7.0\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \"net9.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "message": "Пакет \"DocX 1.7.0\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \"net8.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
       "libraryId": "DocX",
       "targetGraphs": [
-        "net9.0"
+        "net8.0"
       ]
     }
   ]

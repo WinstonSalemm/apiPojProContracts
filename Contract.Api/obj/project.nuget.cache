@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "xcwFHHFJ2oM=",
+  "dgSpecHash": "nO22hXr73mA=",
   "success": true,
   "projectFilePath": "C:\\Users\\Legion\\Desktop\\bot_and_Contracts\\Contracts\\Contract.Api\\Contract.Api.csproj",
   "expectedPackageFiles": [
@@ -23,7 +23,7 @@
       "filePath": "C:\\Users\\Legion\\Desktop\\bot_and_Contracts\\Contracts\\Contract.Api\\Contract.Api.csproj",
       "libraryId": "System.IO.Packaging",
       "targetGraphs": [
-        "net9.0"
+        "net8.0"
       ]
     },
     {
@@ -35,19 +35,19 @@
       "filePath": "C:\\Users\\Legion\\Desktop\\bot_and_Contracts\\Contracts\\Contract.Api\\Contract.Api.csproj",
       "libraryId": "System.IO.Packaging",
       "targetGraphs": [
-        "net9.0"
+        "net8.0"
       ]
     },
     {
       "code": "NU1701",
       "level": "Warning",
-      "message": "Пакет \"DocX 1.7.0\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \"net9.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "message": "Пакет \"DocX 1.7.0\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \"net8.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
       "projectPath": "C:\\Users\\Legion\\Desktop\\bot_and_Contracts\\Contracts\\Contract.Api\\Contract.Api.csproj",
       "warningLevel": 1,
       "filePath": "C:\\Users\\Legion\\Desktop\\bot_and_Contracts\\Contracts\\Contract.Api\\Contract.Api.csproj",
       "libraryId": "DocX",
       "targetGraphs": [
-        "net9.0"
+        "net8.0"
       ]
     }
   ]
